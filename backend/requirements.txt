@@ -1,0 +1,19 @@
+# === CIRFOOD Forecast Service — clean requirements ===
+# FastAPI app & server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# Core scientific stack
+pandas>=2.2.0
+numpy>=1.26.0
+python-dateutil>=2.8.2
+
+# Time-series / forecasting
+statsmodels>=0.14.0
+
+# File uploads (needed if you enable POST /data/upload)
+python-multipart>=0.0.9
+
+# Optional: Prophet (only if you actually use it; requires system toolchain & cmdstanpy)
+# prophet>=1.1.5
+# cmdstanpy>=1.2.3
